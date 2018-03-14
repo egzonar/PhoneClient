@@ -1,8 +1,11 @@
 import tkinter as tk
+from sys import exit
     
 
 def write_slogan():
     print("Phone Client Stoped")
+    exit(0) #
+    
 
 root = tk.Tk()
 frame = tk.Frame(root)
@@ -17,5 +20,5 @@ slogan = tk.Button(frame,
                     fg="red",
                    command=write_slogan)
 slogan.pack(side=tk.LEFT)
-
 root.mainloop()
+
